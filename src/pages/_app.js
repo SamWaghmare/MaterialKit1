@@ -10,6 +10,18 @@ import { createTheme } from 'src/theme';
 import { createEmotionCache } from 'src/utils/create-emotion-cache';
 import 'simplebar-react/dist/simplebar.min.css';
 
+
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
+
+
 const clientSideEmotionCache = createEmotionCache();
 
 const SplashScreen = () => null;
@@ -44,6 +56,7 @@ const App = (props) => {
                   ? <SplashScreen />
                   : getLayout(<Component {...pageProps} />)
               }
+              
             </AuthConsumer>
           </ThemeProvider>
         </AuthProvider>
@@ -52,4 +65,4 @@ const App = (props) => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
