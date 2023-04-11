@@ -12,7 +12,7 @@ import { OverviewTotalProfit } from 'src/sections/overview/overview-total-profit
 import { OverviewTraffic } from 'src/sections/overview/overview-traffic';
 
 import { Amplify } from 'aws-amplify';
-import config from './aws-exports';
+import config from './src/aws-exports';
 Amplify.configure(config);
 
 
