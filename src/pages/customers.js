@@ -160,6 +160,15 @@ const useCustomerIds = (customers) => {
   );
 };
 
+function App({ signOut }) {
+  return (
+    <View className="App">
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
+  );
+}
+
+
 const Page = () => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);

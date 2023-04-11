@@ -19,6 +19,10 @@ import {
 import { useAuth } from 'src/hooks/use-auth';
 import { Layout as AuthLayout } from 'src/layouts/auth/layout';
 
+
+
+
+
 const Page = () => {
   const router = useRouter();
   const auth = useAuth();
@@ -66,6 +70,9 @@ const Page = () => {
     },
     [auth, router]
   );
+
+
+
 
   return (
     <>

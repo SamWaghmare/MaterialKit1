@@ -66,7 +66,7 @@ export const CompanyCard = (props) => {
             display="inline"
             variant="body2"
           >
-            Updated 2hr ago
+            Updated 21hr ago
           </Typography>
         </Stack>
         <Stack
