@@ -23,16 +23,6 @@ import {
 
 
 
-function App1({ signOut }) {
-  return (
-    <View className="App1">
-      <Card>
-       
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
-  );
-}
 
 
 
