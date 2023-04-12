@@ -11,15 +11,7 @@ import { createEmotionCache } from 'src/utils/create-emotion-cache';
 import 'simplebar-react/dist/simplebar.min.css';
 
 
-import "@aws-amplify/ui-react/styles.css";
-import {
-  withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
-} from "@aws-amplify/ui-react";
+
 
 
 
@@ -69,4 +61,4 @@ const App = (props) => {
   );
 };
 
-export default withAuthenticator(App);
+export default App;
